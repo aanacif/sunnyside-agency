@@ -39,7 +39,7 @@ header {
     }
     @include for-desktop-up {
       position: relative;
-      top: -25px;
+      top: -10%;
       left: 0;
       font-size: 3rem;
     }
@@ -145,13 +145,13 @@ header {
       top: 43%;
     }
     @include for-tablet-portrait-up {
-      top: 23%;
+      top: 18%;
     }
     @include for-tablet-landscape-up {
-      top: 35%;
+      top: 27%;
     }
     @include for-desktop-up {
-      top: 35%;
+      top: 25%;
     }
   }
 }
