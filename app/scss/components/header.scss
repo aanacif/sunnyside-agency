@@ -1,0 +1,142 @@
+@use '../util' as *;
+
+header {
+  position: relative;
+  height: 100vh;
+  background-image: url(../app/images/desktop/image-header.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include for-phone-only {
+    height: 60vh;
+    background-image: url(../app/images/mobile/image-header.jpg);
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 8px;
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: var(--font-secondary);
+    @include for-phone-only {
+      font-size: 2.5rem;
+      position: relative;
+      top: -65px;
+      left: 0;
+    }
+    @include for-tablet-portrait-up {
+      position: relative;
+      top: -90px;
+      left: 0;
+      font-size: 2.2rem;
+    }
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    .header-logo {
+      margin: 2rem;
+      @include for-phone-only {
+        margin: 1rem;
+      }
+    }
+    .burger-menu-icon {
+      display: flex;
+      align-items: center;
+      margin-right: 2rem;
+      cursor: pointer;
+      @include for-phone-only {
+        margin-right: 1rem;
+      }
+      @include for-tablet-landscape-up {
+        display: none;
+      }
+    }
+    #links {
+      display: none;
+      justify-content: space-evenly;
+      align-items: center;
+      @include for-tablet-landscape-up {
+        display: flex;
+      }
+      a {
+        color: var(--white);
+        margin: 0 1.5rem;
+      }
+      a:last-child {
+        margin-right: 2rem;
+        background-color: var(--white);
+        border-radius: 50px;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        color: var(--verydarkdesaturatedblue);
+        font-family: var(--font-secondary);
+        font-size: 1rem;
+        transition: all 250ms ease-in-out;
+        &:hover {
+          background-color: hsl(199, 100%, 72%);
+          color: var(--white);
+        }
+      }
+    }
+    #burger-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      position: absolute;
+      top: 10%;
+      left: 50%;
+
+      min-width: 90vw;
+      background-color: var(--white);
+      transform: translateX(-50%);
+      border-top: 50px solid #3ebfff;
+      border-right: 50px solid var(--white);
+      z-index: 1;
+      @include for-phone-only {
+        min-width: 90vw;
+        top: 17%;
+      }
+      @include for-tablet-portrait-up {
+        top: 15%;
+      }
+
+      & > * {
+        margin: 1rem 0;
+        margin-left: 2.5rem;
+        @include for-tablet-portrait-up {
+          margin: 1rem 0;
+          margin-left: 2.5rem;
+        }
+      }
+      a {
+        color: var(--grayishblue);
+      }
+      a:last-child {
+        background-color: var(--yellow);
+        border-radius: 50px;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        color: var(--verydarkdesaturatedblue);
+        font-family: var(--font-secondary);
+        font-size: 1rem;
+      }
+    }
+  }
+  .arrow {
+    position: relative;
+    top: 36%;
+    left: 50%;
+    @include for-phone-only {
+      top: 43%;
+    }
+    @include for-tablet-portrait-up {
+      top: 23%;
+    }
+    @include for-desktop-up {
+      top: 33%;
+    }
+  }
+}

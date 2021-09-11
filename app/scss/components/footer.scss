@@ -1,0 +1,48 @@
+@use '../util' as *;
+
+.filter-green {
+  filter: invert(27%) sepia(59%) saturate(361%) hue-rotate(116deg)
+    brightness(45%) contrast(92%);
+}
+footer {
+  background-color: #90d4c5;
+  img {
+    margin: 0 auto;
+    padding: 4rem 0;
+    padding-bottom: 3rem;
+  }
+  .footer-links {
+    display: flex;
+    margin: 0;
+    margin-bottom: 1rem;
+    justify-content: center;
+    & > * {
+      margin: 0 2rem;
+      color: var(--darkdesaturatedcyan);
+      &:hover {
+        color: var(--white);
+      }
+    }
+  }
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    & > * {
+      margin: 0 1rem;
+      &:hover {
+        filter: invert(99%) sepia(99%) saturate(0%) hue-rotate(360deg)
+          brightness(110%) contrast(110%);
+      }
+    }
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  &:hover {
+    color: var(--softred);
+  }
+}

@@ -1,0 +1,10 @@
+@use '../util' as *;
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: rem(1440);
+  @include for-desktop-up {
+    max-width: fit-content;
+  }
+}

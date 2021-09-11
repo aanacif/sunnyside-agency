@@ -1,0 +1,67 @@
+@use '../util' as *;
+
+.t-header {
+  text-transform: uppercase;
+  font-family: var(--font-secondary);
+  text-align: center;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  color: var(--verydarkgrayishblue);
+  margin-top: 7rem;
+  @include for-tablet-portrait-up {
+    margin-bottom: 0;
+  }
+  @include for-phone-only {
+    margin-top: 4rem;
+  }
+}
+
+.testimonials {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 80vh;
+  @include for-phone-only {
+    height: 100%;
+    grid-template-columns: minmax(375px, 599px);
+    grid-template-rows: repeat(3, auto);
+    margin-bottom: 2rem;
+  }
+  @include for-tablet-portrait-up {
+    height: 100%;
+    grid-template-columns: minmax(375px, 599px);
+    grid-template-rows: repeat(3, auto);
+    margin-bottom: 2rem;
+  }
+  @include for-tablet-landscape-up {
+    grid-template-columns: repeat(3, minmax(375px, 450px));
+    grid-template-rows: repeat(4, auto);
+    margin-bottom: 2rem;
+  }
+  img {
+    border-radius: 50%;
+    width: 15%;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+  .quote {
+    text-align: center;
+    margin: 5rem auto;
+    width: 78%;
+    color: var(--verydarkdesaturatedblue);
+    @include for-phone-only {
+      font-size: 1rem;
+      margin: 2rem auto;
+    }
+  }
+  .name {
+    text-align: center;
+    font-family: var(--font-secondary);
+    font-weight: 900;
+    color: var(--verydarkdesaturatedblue);
+  }
+  .role {
+    text-align: center;
+    color: var(--grayishblue);
+  }
+}
