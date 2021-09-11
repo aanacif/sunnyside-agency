@@ -69,6 +69,9 @@ header {
       display: none;
       justify-content: space-evenly;
       align-items: center;
+      & > *:focus-within {
+        outline: dotted 3px red;
+      }
       @include for-tablet-landscape-up {
         display: flex;
       }

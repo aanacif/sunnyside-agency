@@ -81,6 +81,9 @@
       &:hover + .highlight {
         opacity: 1;
       }
+      &:focus-within {
+        outline: dotted 3px red;
+      }
       @include for-phone-only {
         text-align: center;
       }
@@ -180,6 +183,9 @@
       color: var(--verydarkdesaturatedblue);
       &:hover + .highlight {
         opacity: 1;
+      }
+      &:focus-within {
+        outline: dotted 3px red;
       }
       @include for-phone-only {
         text-align: center;
