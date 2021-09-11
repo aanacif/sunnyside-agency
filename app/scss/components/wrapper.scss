@@ -97,12 +97,12 @@
   }
   .egg {
     grid-area: egg;
-    background-image: url(../../../app/images/desktop/image-transform.jpg);
+    background-image: url(../app/images/desktop/image-transform.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     @include for-phone-only {
-      background-image: url(../../../app/images/mobile/image-transform.jpg);
+      background-image: url(../app/images/mobile/image-transform.jpg);
     }
   }
   .standout {
@@ -183,17 +183,17 @@
   }
   .glass {
     grid-area: glass;
-    background-image: url(../../../app/images/desktop/image-stand-out.jpg);
+    background-image: url(../app/images/desktop/image-stand-out.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     @include for-phone-only {
-      background-image: url(../../../app/images/mobile/image-stand-out.jpg);
+      background-image: url(../app/images/mobile/image-stand-out.jpg);
     }
   }
   .design {
     grid-area: design;
-    background-image: url(../../../app/images/desktop/image-graphic-design.jpg);
+    background-image: url(../app/images/desktop/image-graphic-design.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -229,7 +229,7 @@
   }
   .photography {
     grid-area: photography;
-    background-image: url(../../../app/images/desktop/image-photography.jpg);
+    background-image: url(../app/images/desktop/image-photography.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

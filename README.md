@@ -55,8 +55,8 @@ for (let coffee = 1; project != done; coffee++) {
 
 ### What I learned
 
-CSS grid feels a bit better, still lots of room to improve... also not sure why breakpoints look fine
-on Firefox but not on Chrome when going under 375px width.. :/
+CSS grid feels a bit better, still lots of room to improve... also not sure why the breakpoints look fine
+on Firefox, but when on Chrome they get messed up going under 375px width.. :/
 
 ## Author
 
