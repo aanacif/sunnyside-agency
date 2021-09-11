@@ -19,6 +19,7 @@ footer {
     & > * {
       margin: 0 2rem;
       color: var(--darkdesaturatedcyan);
+      transition: all 250ms ease-in-out;
       &:hover {
         color: var(--white);
       }
@@ -29,6 +30,7 @@ footer {
     justify-content: center;
     & > * {
       margin: 0 1rem;
+      transition: all 250ms ease-in-out;
       &:hover {
         filter: invert(99%) sepia(99%) saturate(0%) hue-rotate(360deg)
           brightness(110%) contrast(110%);
