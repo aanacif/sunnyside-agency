@@ -53,6 +53,9 @@
         margin: 0 3rem;
         width: 80%;
       }
+      @include for-desktop-up {
+        text-align: start;
+      }
     }
     p {
       margin: 3rem 0;
@@ -64,6 +67,9 @@
         font-size: 1.1rem;
         margin: 3rem 2rem;
         text-align: center;
+      }
+      @include for-desktop-up {
+        margin-left: 4rem;
       }
     }
     a {
@@ -77,6 +83,11 @@
       }
       @include for-phone-only {
         text-align: center;
+      }
+      @include for-desktop-up {
+        width: 100%;
+        margin-left: 8rem;
+        text-align: start;
       }
     }
     .highlight {
@@ -92,6 +103,9 @@
       @include for-phone-only {
         left: 50%;
         transform: translateX(-50%);
+      }
+      @include for-desktop-up {
+        left: -32%;
       }
     }
   }
@@ -139,6 +153,9 @@
         margin: 0 3rem;
         width: 80%;
       }
+      @include for-desktop-up {
+        text-align: start;
+      }
     }
     p {
       margin: 3rem 0;
@@ -150,6 +167,9 @@
         font-size: 1.1rem;
         margin: 3rem 2rem;
         text-align: center;
+      }
+      @include for-desktop-up {
+        margin-left: 4rem;
       }
     }
     a {
@@ -163,6 +183,11 @@
       }
       @include for-phone-only {
         text-align: center;
+      }
+      @include for-desktop-up {
+        width: 100%;
+        margin-left: 8rem;
+        text-align: start;
       }
     }
     .highlight {
@@ -178,6 +203,9 @@
       @include for-phone-only {
         left: 50%;
         transform: translateX(-50%);
+      }
+      @include for-desktop-up {
+        left: -32%;
       }
     }
   }
